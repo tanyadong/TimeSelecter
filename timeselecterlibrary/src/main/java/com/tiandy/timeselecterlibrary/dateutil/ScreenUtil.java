@@ -1,4 +1,4 @@
-package com.tiandy.myapplication.util.dateutil;
+package com.tiandy.timeselecterlibrary.dateutil;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

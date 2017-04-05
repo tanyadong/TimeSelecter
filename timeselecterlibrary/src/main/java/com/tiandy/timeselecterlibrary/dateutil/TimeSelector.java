@@ -1,4 +1,4 @@
-package com.tiandy.myapplication.util.dateutil;
+package com.tiandy.timeselecterlibrary.dateutil;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.tiandy.myapplication.R;
+import com.tiandy.timeselecterlibrary.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -30,7 +30,6 @@ public class TimeSelector {
         DAY(4),
         HOUR(8),
         MINUTE(16);
-
 
         SCROLLTYPE(int value) {
             this.value = value;
@@ -93,7 +92,15 @@ public class TimeSelector {
         initDialog();
         initView();
     }
+    /**
+    * @author  tanyadong
+    * @Title: setThemeColor
+    * @Description: 设置时间控件主题颜色
+    * @date 2017/4/5 10:26
+    */
+    public void setThemeColor() {
 
+    }
     /**
     * @author  谭亚东
     * @Title: show

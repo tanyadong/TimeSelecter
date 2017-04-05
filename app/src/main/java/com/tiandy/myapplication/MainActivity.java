@@ -6,10 +6,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tiandy.myapplication.util.dateutil.TimeSelector;
+import com.tiandy.timeselecterlibrary.dateutil.TimeSelector;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-//    private ListView alarmInfo_listView;
     private TextView startTimeTxt, endTimeTxt;
     private TimeSelector timeSelector;
     private final static String STARTTIME = "1980-01-01 00:00"; //时间控件 开始时间
@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         init();
         addListener();
-//        alarmInfo_listView.setAdapter(alarmInfoAdapter);
     }
     /**
     * @author  谭亚东
@@ -31,8 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     * @date 2017/2/21 14:29
     */
     private void init() {
-        timeSelector = new TimeSelector(this, null,STARTTIME , ENDTIME);
-//        alarmInfo_listView = (ListView) findViewById(R.id.listview_alarm);
+        timeSelector = new TimeSelector(this, null,"1980-01-01 00:00" , "2150-12-31 23:59");
         startTimeTxt = (TextView) findViewById(R.id.txt_starttime);
         endTimeTxt = (TextView) findViewById(R.id.txt_endtime);
     }
@@ -40,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startTimeTxt.setOnClickListener(this);
         endTimeTxt.setOnClickListener(this);
     }
-
 
     @Override
     public void onClick(View v) {

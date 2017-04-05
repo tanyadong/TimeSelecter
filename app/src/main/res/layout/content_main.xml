@@ -68,10 +68,4 @@
             android:layout_height="wrap_content" />
         </RelativeLayout>
 
-    <!--<ListView-->
-        <!--android:id="@+id/listview_alarm"-->
-        <!--android:layout_below="@+id/rl_alarm_remark"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-    <!--</ListView>-->
 </RelativeLayout>

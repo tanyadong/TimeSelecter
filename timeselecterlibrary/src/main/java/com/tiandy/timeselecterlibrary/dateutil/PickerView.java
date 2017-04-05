@@ -1,4 +1,4 @@
-package com.tiandy.myapplication.util.dateutil;
+package com.tiandy.timeselecterlibrary.dateutil;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.tiandy.myapplication.R;
+import com.tiandy.timeselecterlibrary.R;
 
 import java.util.ArrayList;
 import java.util.List;
